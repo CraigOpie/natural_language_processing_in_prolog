@@ -16,29 +16,41 @@ You should handle agreement with features.
 
 Grammatical queries:
 
-“Did Mark Hamill play Luke Skywalker?”
+    *“Did Mark Hamill play Luke Skywalker?”
+    top([did, mark, hamill, play, luke, skywalker]).
 
-“Mark Hamill plays Luke Skywalker, right?”
+    *“Mark Hamill plays Luke Skywalker, right?”
+    top([mark, hamill, plays, luke, skywalker, right]).
 
-“Did Mark Hamill play Han Solo in Star Wars III?”
+    *“Did Mark Hamill play Han Solo in Star Wars III?”
+    top([did, mark, hamill, play, han, solo, in, star, wars, iii]).
 
-“Did Mark Hamill direct Star Wars I?”
+    *“Did Mark Hamill direct Star Wars I?”
+    top([did, mark, hamill, direct, star, wars, i]).
 
-“Is it true that Mark Hamill is an actor?”
+    *“Is it true that Mark Hamill is an actor?”
+    top([is, it, true, that, mark, hamill, is, an, actor]).
 
-"Is it true that Han Solo is a character in Star Wars III?"
+    *"Is it true that Han Solo is a character in Star Wars III?"
+    top([is, it, true, that, han, solo, is, a, character, in, star, wars, iii]).
 
-“Is it true that Princess Leia is an actor and Mark Hamill is a director?”
+    *“Is it true that Princess Leia is an actor and Mark Hamill is a director?”
+    top([is, it, true, that, princess, leia, is, an, actor, and, mark, hamill, is, a, director]).
 
-“George Lucas is a director, Mark Hamill is an actor and Han Solo is a character, right?” [should be able to handle any number of subqueries]
+    *“George Lucas is a director, Mark Hamill is an actor and Han Solo is a character, right?” [should be able to handle any number of subqueries]
+    top([george, lucas, is, a, director, and, mark, hamill, is, an, actor, and, han, solo, is, a, character, right]).
 
-“Who is the actor for Han Solo?”
+    *“Who is the actor for Han Solo?”
+    top([who, is, the, actor, for, han, solo]).
 
-“What is the title of Star Wars II?”
+    *“What is the title of Star Wars II?”
+    top([what, is, the, title, of, star, wars, ii]).
 
-“Who is the director of Star Wars II?”
+    *“Who is the director of Star Wars II?”
+    top([who, is, the, director, of, star, wars, ii]).
 
-“Who is the character of Mark Hamill?”
+    *“Who is the character of Mark Hamill?”
+    top([who, is, the, character, of, mark, hamill]).
 
 Ungrammatical queries (examples):
 
